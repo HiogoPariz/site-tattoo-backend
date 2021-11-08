@@ -28,4 +28,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'site-tattoo-backend'
           heroku_email: 'hiogopariz@gmail.com'
-          usedocker: true

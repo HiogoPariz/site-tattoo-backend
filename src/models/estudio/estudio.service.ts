@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { Estudio, EstudioDocument } from './estudio.schema';
-import { EstudioDto } from './estudio.dto';
+import { EstudioDto } from '@/models/estudio/estudio.dto';
+import { Estudio, EstudioDocument } from '@/models/estudio/estudio.schema';
 
 @Injectable()
 export class EstudioService {
@@ -15,7 +15,9 @@ export class EstudioService {
   }
 
   async update(id: string, updateEstudioDto: EstudioDto): Promise<Estudio> {
-    return await this.estudioModel.findByIdAndUpdate(id, updateEstudioDto).exec();
+    return await this.estudioModel
+      .findByIdAndUpdate(id, updateEstudioDto)
+      .exec();
   }
 
   async delete(id: string): Promise<Estudio> {

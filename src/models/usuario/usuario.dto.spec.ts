@@ -1,4 +1,4 @@
-import { UsuarioDto } from './usuario.dto';
+import { UsuarioDto } from '@/models/usuario/usuario.dto';
 
 describe('UsuarioDto', () => {
   it('should be defined', () => {

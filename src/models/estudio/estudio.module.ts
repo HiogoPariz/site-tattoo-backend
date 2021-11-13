@@ -1,12 +1,14 @@
+import { EstudioController } from '@/models/estudio/estudio.controller';
+import { Estudio, EstudioSchema } from '@/models/estudio/estudio.schema';
+import { EstudioService } from '@/models/estudio/estudio.service';
 import { Module } from '@nestjs/common';
-import { EstudioController } from './estudio.controller';
-import { EstudioService } from './estudio.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Estudio, EstudioSchema } from './estudio.schema';
 
 @Module({
-  imports: [MongooseModule.forFeature([{ name: Estudio.name, schema: EstudioSchema }])],
+  imports: [
+    MongooseModule.forFeature([{ name: Estudio.name, schema: EstudioSchema }]),
+  ],
   controllers: [EstudioController],
-  providers: [EstudioService]
+  providers: [EstudioService],
 })
 export class EstudioModule {}

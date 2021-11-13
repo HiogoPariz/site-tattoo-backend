@@ -1,7 +1,7 @@
+import { TatuadorController } from '@/models/tatuador/tatuador.controller';
 import { Module } from '@nestjs/common';
-import { TatuadorController } from './tatuador.controller';
 
 @Module({
-  controllers: [TatuadorController]
+  controllers: [TatuadorController],
 })
 export class TatuadorModule {}

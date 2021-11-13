@@ -1,3 +1,6 @@
+import { AuthenticatedGuard } from '@/authentication/auth/authenticated.guard';
+import { EstudioDto } from '@/models/estudio/estudio.dto';
+import { EstudioService } from '@/models/estudio/estudio.service';
 import {
   Body,
   Controller,
@@ -8,9 +11,6 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { AuthenticatedGuard } from 'src/authentication/auth/authenticated.guard';
-import { EstudioDto } from './estudio.dto';
-import { EstudioService } from './estudio.service';
 
 @Controller('estudio')
 export class EstudioController {

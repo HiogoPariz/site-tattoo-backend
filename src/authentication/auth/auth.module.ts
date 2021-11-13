@@ -6,7 +6,7 @@ import { LocalStrategy } from './local.strategy';
 import { SessionSerializer } from './session.serializer';
 
 @Module({
-    imports: [UsuarioModule, PassportModule.register({ session: true })],
-    providers: [AuthService, LocalStrategy, SessionSerializer]
+  imports: [UsuarioModule, PassportModule.register({ session: true })],
+  providers: [AuthService, LocalStrategy, SessionSerializer],
 })
 export class AuthModule {}

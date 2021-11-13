@@ -35,5 +35,6 @@ describe('EstudioService', () => {
 
   it('should be defined', () => {
     expect(service).toBeDefined();
+    expect(model).toBeDefined();
   });
 });

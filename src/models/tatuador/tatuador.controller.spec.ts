@@ -1,6 +1,6 @@
+import { AuthenticatedGuard } from '@/authentication/auth/authenticated.guard';
+import { TatuadorController } from '@/models/tatuador/tatuador.controller';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AuthenticatedGuard } from '../../authentication/auth/authenticated.guard';
-import { TatuadorController } from './tatuador.controller';
 
 describe('TatuadorController', () => {
   let controller: TatuadorController;

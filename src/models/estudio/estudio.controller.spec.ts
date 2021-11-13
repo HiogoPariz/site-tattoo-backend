@@ -1,7 +1,7 @@
+import { AuthenticatedGuard } from '@/authentication/auth/authenticated.guard';
+import { EstudioController } from '@/models/estudio/estudio.controller';
+import { EstudioService } from '@/models/estudio/estudio.service';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AuthenticatedGuard } from '../../authentication/auth/authenticated.guard';
-import { EstudioController } from './estudio.controller';
-import { EstudioService } from './estudio.service';
 
 describe('EstudioController', () => {
   let controller: EstudioController;

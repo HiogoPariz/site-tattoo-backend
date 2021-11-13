@@ -1,7 +1,6 @@
+import { UsuarioController } from '@/models/usuario/usuario.controller';
+import { UsuarioService } from '@/models/usuario/usuario.service';
 import { Test, TestingModule } from '@nestjs/testing';
-import { UsuarioController } from './usuario.controller';
-import { UsuarioModule } from './usuario.module';
-import { UsuarioService } from './usuario.service';
 
 describe('UsuarioController', () => {
   let controller: UsuarioController;
@@ -30,5 +29,6 @@ describe('UsuarioController', () => {
 
   it('should be defined', () => {
     expect(controller).toBeDefined();
+    expect(service).toBeDefined();
   });
 });

@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { EstudioService } from './estudio.service';
 import { getModelToken } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { EstudioDocument } from './estudio.schema';
+import { EstudioDocument } from '@/models/estudio/estudio.schema';
+import { EstudioService } from '@/models/estudio/estudio.service';
 
 describe('EstudioService', () => {
   let service: EstudioService;

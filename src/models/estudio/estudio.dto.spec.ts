@@ -1,4 +1,4 @@
-import { EstudioDto } from './estudio.dto';
+import { EstudioDto } from '@/models/estudio/estudio.dto';
 
 describe('EstudioDto', () => {
   it('should be defined', () => {

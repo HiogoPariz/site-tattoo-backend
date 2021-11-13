@@ -13,6 +13,5 @@ jobs:
         with:
           node-version: 16
       - run: yarn
-      - run: yarn commitlint
       - run: yarn format
       - run: yarn lint

@@ -13,6 +13,6 @@ export class UsuarioService {
     return await new this.usuarioModel(createUsuarioDto).save();
   }
   async findOne(login: string): Promise<Usuario | undefined> {
-    return await this.usuarioModel.findOne({ login: login }).exec();
+    return await this.usuarioModel.findOne({ login }).exec();
   }
 }

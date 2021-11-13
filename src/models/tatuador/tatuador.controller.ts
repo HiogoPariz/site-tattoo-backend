@@ -1,5 +1,5 @@
 import { Controller, Get, Post, UseGuards } from '@nestjs/common';
-import { AuthenticatedGuard } from 'src/authentication/auth/authenticated.guard';
+import { AuthenticatedGuard } from '../../authentication/auth/authenticated.guard';
 
 @Controller('tatuador')
 export class TatuadorController {
